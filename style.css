@@ -1,0 +1,340 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  background: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  background-color: #fbe1d0;
+
+}
+
+li, a, button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: rgb(246,9,37);
+}
+
+.nav-links li a:hover{
+  color: rgb(151, 5, 22);
+}
+
+.logo {
+  cursor: pointer;
+  height: 70px;
+  padding-left: 20px;
+}
+.logo-image-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+}
+
+.logo-text{
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 800;
+  color: #f60925;
+  text-align: start;
+  margin-right: 3rem;
+  font-size: 20px;
+}
+
+
+.login-button {
+  padding: 9px 25px;
+  background-color: rgb(246,9,37);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  margin-right: 3rem;
+}
+
+.login-button:hover {
+  background-color: rgb(151, 5, 22);
+
+}
+
+.home-container {
+  padding: 2rem 3rem;
+
+}
+.home-data {
+  position: relative;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 70px;
+  color: #2d1013;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.heading-big {
+  font-size: 90px;
+}
+
+.home-description {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #5f4548;
+  margin-block: 1rem 2rem;
+
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  background-color: #f60925;
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  box-shadow: 0 8px 24px #cf7f87;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+}
+
+.button:hover {
+  background-color: rgb(151, 5, 22);
+}
+
+.home-image {
+  margin-top: 3rem;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  background: none;
+  animation: spin 80s linear infinite; 
+}
+ .pizza {
+  background: none;
+ }
+
+ .story-container {
+  display: grid;
+  height: 780px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3rem;
+  padding: 6rem 6rem;
+  position: relative;
+  opacity: 0;
+  animation: fadeInSlideUp 2s ease-out forwards; 
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  
+ }
+
+ .story-title {
+  font-size: 60px;
+  font-family: "Playfair Display", sans-serif;
+  color: #2d1013;
+  padding-bottom: 2rem;
+ 
+  
+ }
+
+.chef-image {
+  border-radius: 50%;
+  width: 500px;
+  padding-left: 5rem;
+}
+
+.chef-story {
+  color: #2d1013;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: medium;
+  padding-bottom: 3rem;
+
+}
+
+.title-flag {
+  display: flex;
+}
+
+.flag {
+  margin-top: 100px;
+  margin-left: 10px;
+  height: 3rem;
+}
+
+.review-container {
+  height: 780px;
+  background-image:linear-gradient(to right, rgba(255,255,255, 0.5) 0 100%), url(/asset/Indian\ Cities\ Vector.png);
+  background-size: cover ;
+  background-position: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 6rem;
+
+}
+.count {
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #2d1013;
+}
+
+.customers, .cities {
+  font-family: "Playfair Display", sans-serif;
+  padding: 6rem;
+  font-size: 4rem;
+  background-color: transparent;
+  color: #391318;
+}
+
+.order-container {
+  height: 600px;
+  padding-bottom: 6rem;
+}
+
+.order-container .si-zo-button img {
+  height: 10rem;
+
+}
+
+.order-container .order-text h2 {
+  font-weight: 400;
+  color: #2d1013;
+  padding: 4rem;
+  text-align: center;
+  font-size: 60px;
+}
+
+.order-container .order-text h3 {
+
+  color: #391318;
+  padding: 0rem 3rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.order-container .order-text .number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.order-container h2 .off {
+  font-weight: 700;
+  font-size: 80px;
+}
+
+
+
+.si-zo-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn  {
+  background-color: #fffdfd;
+  border: 0.25rem solid #f60925; 
+  padding: 1rem 2.5rem;
+  border-radius: 4rem;
+  box-shadow: 0 8px 24px #cf7f87;
+  cursor: pointer; 
+  transition: all 0.3s ease 0s; 
+}
+
+.btn:hover {
+  background-color: #fbe1d0;
+  border: 0.25rem solid #ffffff; 
+
+}
+
+.follow h3 {
+  font-size: 25px;
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.follow-us {
+  display: flex;
+  justify-content: center;
+
+}
+
+.follow-us li {
+  display: inline-block;
+  justify-content: space-between;
+  padding: 2rem;
+  height: 25px;
+}
+
+.follow-us .icon {
+  height: 30px;
+  cursor: pointer;
+}
+
+.cp {
+  background-color: #fbe1d0;
+  color:#5f4548;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 3rem;
+  font-size: medium;
+}
+
