@@ -10,8 +10,6 @@ This project helped me strengthen the fundamentals of web design, focusing on cl
 * ✅ Structured sections using `div` and column layouts
 * 📅 Header, footer, and styled call-to-action buttons
 * 🎨 Custom colors, spacing, and alignment for branding
-* 📱 Fully responsive design for mobile and desktop devices
-
 ---
 
 ## 📂 Tech Stack
